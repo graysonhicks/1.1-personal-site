@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Bill Lumbergh - VP</title>
+    <meta name="description" content="a word from Milton Waddams" />
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <audio src="audio/gangsta.mp4" autoplay="true"></audio>
+  </head>
+  <header>
+    <img class="fire fire1" src="img/fire.gif">
+    <img class="fire fire2" src="img/fire.gif">
+  </header>
+  <body>
+    <div class="pagenav">
+      <ul class="internalnav">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#message">Report from Milton</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="allcontent">
+      <a name="about"></a>
+        <div class="about">
+          <ul class="images">
+            <img src="img/milton.jpg" alt="" class="linkimage">
+            <img src="img/peter.jpg" alt="" class="linkimage">
+            <img src="img/copier.jpg" alt="" class="linkimage">
+            <img src="img/lumbergh.jpeg" alt="" class="linkimage">
+          </ul>
+          <ul class="nav-links">
+            <li class="nav-link">
+              <a href="http://www.initechinfo.com/en/">Initech</a>
+            </li>
+            <li class="nav-link">
+              <a href="https://www.youtube.com/watch?v=Fy3rjQGc6lA">TPS Technique</a>
+            </li>
+            <li class="nav-link">
+              <a href="https://en.wikipedia.org/wiki/TPS_report">TPS Wiki</a>
+            </li>
+            <li class="nav-link">
+              <a href="http://www.amazon.com/ThinkGeek-The-Red-Swingline-Stapler/dp/B002L5C6X6">Swingline Staplers</a>
+            </li>
+          </ul>
+        </div>
+      <div class="message">
+        <a name="message"></a>
+        <img id="flag" src="img/flag.gif">
+        <h1>TPS Reports 101</h1>
+        <h2>By Milton Waddams</h2>
+          <p>
+            Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+            Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
+          </p>
+          <p>
+            Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.  Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.  Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products.
+          </p>
+      </div>
+    </div>
+    <a name="contact"></a>
+    <div class="contact">
+      <div class="contactpic">
+        <img src="img/nina.jpeg" alt="">
+      </div>
+      <div class="contactinfo">
+        <h3>Thanks for visiting!  To contact Nina at corporate, please use the info below!</h3>
+        <ul>
+          <li>Phone: 1-888-555-1234</li>
+          <li>Email: <a href="mailto:initech@gmail.com">nina@initechglobal.com</a></li>
+          <li>Fax: Sorry, fax is currently BROKEN</li>
+          <li>Mail: 1234 Corporate Lane Columbia, SC 29201</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <h3>Initech, 2016</h3>
+    <p>Milt, we're gonna need to go ahead and move you downstairs into storage B. We have some new people coming in, and we need all the space we can get. So if you could just go ahead and pack up your stuff and move it down there, that would be terrific, OK? </p>
+  </footer>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+
+    var welcome = prompt("HAVE YOU SEEN MY STAPLER?");
+
+    if(welcome === "yes") {
+      alert("Okay, thanks, it's my favorite.");
+    } else {
+      alert("That's the last straw!");
+    };
+
+    var linkImages = $('.linkimage');
+    var link = $('.nav-link');
+    var fire = $('.fire');
+
+    linkImages.hide().show("slow");
+    link.hide().show("slow");
+
+    fire.mouseenter(function(){
+      $(this).addClass("zoomed");
+      console.log("Zoomed");
+    });
+
+    fire.mouseleave(function(){
+      $(this).removeClass("zoomed");
+    });
+
+  </script>
+
+</html>
